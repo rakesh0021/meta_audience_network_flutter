@@ -71,8 +71,9 @@ public class FacebookAudienceNetworkPlugin implements FlutterPlugin, MethodCallH
         if (testMode) {
             AdSettings.setTestMode(true);
         }
+        Context context = _activity != null ? _activity : _context;
         AudienceNetworkAds
-                .buildInitSettings(_activity.getApplicationContext())
+                .buildInitSettings(context)
                 .withInitListener(new  AudienceNetworkAds.InitListener() {
                     @Override
                     public void onInitialized(AudienceNetworkAds.InitResult initResult) {
