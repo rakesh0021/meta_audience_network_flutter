@@ -8,7 +8,7 @@ version: 0.0.6
 homepage: https://github.com/nooralibutt/audience_network_flutter
 
 environment:
-  sdk: '>=2.12.3 <3.0.0'
+  sdk: ^3.5.3
   flutter: '>=2.0.6'
 
 dependencies:
